@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rafaella Eleonor Diaz Miranda | Portafolio</title>
+  <meta name="description" content="Portafolio de Rafaella: Frontend, Backend e IA aplicada." />
+  <!-- Fuente -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <!-- Estilos -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Navegación -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a class="brand" href="#inicio">RE</a>
+      <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#contacto">Contacto</a>
+        <button id="themeToggle" class="btn-ghost" aria-label="Cambiar tema">Oscuro</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section id="inicio" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-avatar">
+          
+          <img src="assets/foto.png" alt="Foto de Rafaella" />
+  <!-- Si NO tienes sparkles.png, borra la línea de abajo -->
+  <!-- assets/sparkles.png" alt="" /> -->
+        </div>
+        <h1 class="hero-title">Rafaella Eleonor Diaz Miranda</h1>
+        <p class="hero-subtitle">
+          Estudiante de Ingeniería Civil Informática, me apasiona aprender y crear con tecnología.
+        </p>
+        <div class="hero-cta">
+          <a class="btn" href="#proyectos">Ver mis proyectos</a>
+          <a class="btn btn-outline" href="#sobre-mi">Sobre mí</a>
+        </div>
+        <p id="visitCounter" class="muted">Visitas: —</p>
+      </div>
+    </section>
+
+    <!-- Sobre mí -->
+    <section id="sobre-mi" class="section">
+      <div class="container">
+        <h2>Sobre mí</h2>
+        <p class="lead">
+          Soy Rafaella, me gusta aprender nuevas herramientas y crear cosas desde cero.
+          Me interesa el diseño, el desarrollo y cómo la tecnología puede mejorar la vida de las personas.
+        </p>
+
+        <ul class="chip-list">
+          <li class="chip">Frontend</li>
+          <li class="chip">Backend</li>
+          <li class="chip">UX/UI</li>
+          <li class="chip">IA</li>
+          <li class="chip">Bases de datos</li>
+        </ul>
+
+        <div class="grid cards-3">
+          <article class="card">
+            <div class="card-icon">💻</div>
+            <h3>Desarrollo Web</h3>
+            <p>HTML, CSS, JavaScript y bases para frameworks modernos.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon">🎨</div>
+            <h3>Diseño UI/UX</h3>
+            <p>Interfaces intuitivas y atractivas con foco en usabilidad.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon">⌨️</div>
+            <h3>Programación</h3>
+            <p>Varios lenguajes y paradigmas; me encanta resolver problemas.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="proyectos" class="section">
+      <div class="container">
+        <h2>Mis Proyectos</h2>
+
+        <div class="grid cards-3">
+          <article class="card">
+            <div class="card-icon">🧩</div>
+            <h3>Portafolio Full‑Stack</h3>
+            <p>Mi sitio personal con diseño propio y luego desarrollo front‑end y back‑end.</p>
+            <div class="chips tech">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-icon">🔌</div>
+            <h3>API de Tareas (en progreso)</h3>
+            <p>API para gestionar tareas con operaciones CRUD y pruebas básicas.</p>
+            <div class="chips tech">
+              <span>Python</span><span>FastAPI</span><span>PostgreSQL</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-icon">🤖</div>
+            <h3>Mini IA de Sentimientos (en progreso)</h3>
+            <p>Clasificador simple con modelos tradicionales y visualizaciones.</p>
+            <div class="chips tech">
+              <span>Python</span><span>IA</span><span>scikit‑learn</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="section">
+      <div class="container">
+        <h2>Contacto</h2>
+        <p class="lead">¿Tienes un proyecto en mente? Conversemos.</p>
+
+        <div class="grid cards-3">
+          <article class="card">
+            <h3>Email</h3>
+            <p><a href="mailto:rafaelladiazmiranda222@gmail.com">rafaelladiazmiranda222@gmail.com</a></p>
+          </article>
+          <article class="card">
+            <h3>LinkedIn</h3>
+            <p><a href="https://linkedin.com/in/rafaelladiaz" target="_blank" rel="noopener">linkedin.com/in/rafaelladiaz</a></p>
+          </article>
+          <article class="card">
+            <h3>GitHub</h3>
+            <p><a href="https://github.com/rafaelladiaz" target="_blank" rel="noopener">github.com/rafaelladiaz</a></p>
+          </article>
+        </div>
+
+        <!-- Formulario temporal vía FormSubmit (sin backend) -->
+        <form class="form" action="https://formsubmit.co/rafaelladiazmiranda222@gmail.com" method="POST">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_subject" value="Nuevo mensaje desde tu portafolio">
+          <label>Nombre
+            <input type="text" name="name" required />
+          </label>
+          <label>Email
+            <input type="email" name="email" required />
+          </label>
+          <label>Mensaje
+            <textarea name="message" rows="5" required></textarea>
+          </label>
+          <button class="btn" type="submit">Envíame un mensaje</button>
+          <p id="formStatus" class="muted"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Rafaella Eleonor Diaz Miranda — Hecho con 💗</p>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="main.js"></script>
+</body>
+</html>
