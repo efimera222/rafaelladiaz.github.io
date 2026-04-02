@@ -13,7 +13,8 @@ toggleBtn.addEventListener('click', ()=> setTheme(!document.documentElement.clas
 
 // Contador de visitas (temporal simulado; luego lo conectamos a tu API real)
 (function loadVisits(){
-  const simulated = Math.floor(Math.random()*200) + 20;
+  const count = parseInt(localStorage.getItem('visitCount') || '0', 10) + 1;
+  localStorage.setItem('visitCount', count);
   const el = document.getElementById('visitCounter');
-  if(el) el.textContent = `Visitas: ${simulated}`;
+  if(el) el.textContent = `Visitas: ${count}`;
 })();
