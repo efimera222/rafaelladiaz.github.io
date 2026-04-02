@@ -427,7 +427,6 @@
           <a class="btn-outline" href="https://www.linkedin.com/in/rafaella-eleonor-diaz-miranda-410a7b388/" target="_blank" rel="noopener">LinkedIn</a>
         </div>
 
-        <p id="visitCounter" class="muted">Visitas: —</p>
       </div>
     </section>
 
@@ -638,12 +637,7 @@
       setTheme(!document.documentElement.classList.contains('dark'));
     });
 
-    (function loadVisits(){
-      const count = parseInt(localStorage.getItem('visitCount') || '0', 10) + 1;
-      localStorage.setItem('visitCount', count);
-      const el = document.getElementById('visitCounter');
-      if (el) el.textContent = `Visitas: ${count}`;
-    })();
+          
   </script>
 </body>
 </html>
